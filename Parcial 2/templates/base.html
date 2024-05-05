@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block titulo %}{% endblock %}</title>
+        <link> rel="stylesheet" href="{{url_for('static', filename = 'css/estilo.css') }}"<link>
+    </head>
+    <body>
+        <img src="{{url_for('static', filename = 'imagenes/Titulo.jpg')}}" class = "center">
+        {% block contenido %}{% endblock %}
+    </body>
+</html>
